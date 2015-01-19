@@ -2,5 +2,7 @@
 *.iml
 .idea/
 
+# Dev configuration
 node_modules/
 package.json
+npm-debug.log

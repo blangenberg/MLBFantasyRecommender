@@ -1,0 +1,30 @@
+<div class="container-fluid">
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Team</th>
+            <th>AB</th>
+            <th>H</th>
+            <th>HR</th>
+            <th>RBI</th>
+            <th>SB</th>
+            <th>OBP</th>
+            <th>SLG</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="player in batterCtrl.players">
+            <th>{{player.name}}</th>
+            <td>{{player.team}}</td>
+            <td>{{player.AB}}</td>
+            <td>{{player.H}}</td>
+            <td>{{player.HR}}</td>
+            <td>{{player.RBI}}</td>
+            <td>{{player.SB}}</td>
+            <td>{{player.OBP | number:3 }}</td>
+            <td>{{player.SLG | number:3 }}</td>
+        </tr>
+        </tbody>
+    </table>
+</div>

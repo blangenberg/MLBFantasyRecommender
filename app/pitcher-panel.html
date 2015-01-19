@@ -1,0 +1,28 @@
+<div class="container-fluid">
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Team</th>
+            <th>IP</th>
+            <th>ERA</th>
+            <th>FIP</th>
+            <th>WHIP</th>
+            <th>SO</th>
+            <th>SV</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="player in pitcherCtrl.players">
+            <th>{{player.name}}</th>
+            <td>{{player.team}}</td>
+            <td>{{player.IP}}</td>
+            <td>{{player.ERA | number:2}}</td>
+            <td>{{player.FIP | number:2}}</td>
+            <td>{{player.WHIP | number:2}}</td>
+            <td>{{player.SO}}</td>
+            <td>{{player.SV}}</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
